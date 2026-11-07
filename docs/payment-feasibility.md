@@ -37,3 +37,7 @@ Stripe appears to be a possible payment processor for BookBridge based on this i
 ## 7. Evidence
 - Screenshot 1: Stripe checkout confirmation for $25.00.
 - Screenshot 2: Stripe Dashboard showing the $25.00 transaction with Succeeded status.
+- <img width="1171" height="772" alt="image" src="https://github.com/user-attachments/assets/755c135f-8025-4e9f-a0ca-31adf366f01a" />
+<img width="1207" height="465" alt="image" src="https://github.com/user-attachments/assets/bf9f8c66-2b7b-406b-9cd9-a4618c62299e" />
+
+
