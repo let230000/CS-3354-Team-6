@@ -54,6 +54,21 @@ Removed help boxes and fixed typos
 - Section 2.3: helped create the digital context diagram and updated the system description.
 - Section 2.4: combined and shortened project constraints to remove repeated information.
 - Section 1.3: shortened definitions and removed unnecessary terms.
+
+### November 7, 2026 — Derrick Greene
+
+**Task:** P2 Payment Feasibility Test (Risk R2)
+
+**Work completed:**
+- Created a Stripe sandbox account for BookBridge.
+- Added a sample Calculus Textbook for $25.00.
+- Created a one-time payment link using Stripe Checkout.
+- Completed a simulated payment and confirmed that Stripe recorded the transaction as Succeeded.
+- Created `docs/payment-feasibility.md` to document the test results and limitations.
+
+**Result:** The Stripe sandbox payment worked successfully. Integration with the BookBridge application still needs to be completed and tested.
+
+**GitHub evidence:** Commit `af97f4c` — `docs/payment-feasibility.md`.
 - Section 4.1: updated team roles and responsibilities, including my role as Project Manager.
 - Section 4.2: created the P2 milestone schedule with deadlines and assigned owners.
 - Project documentation: reviewed sections for inconsistencies and worked on reducing the document to meet the 10–14 page limit.
