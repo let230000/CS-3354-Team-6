@@ -74,6 +74,10 @@ Removed help boxes and fixed typos
 - Project documentation: reviewed sections for inconsistencies and worked on reducing the document to meet the 10–14 page limit.
 - Project management: took responsibility for coordinating team assignments and submitting the P1 document.
 
+November 7, 2026 — P2 Section 8 Update-Derrick Greene
+
+Updated Section 8 (Prototype Evidence: Architecture Spike) in the shared P2 document. Added the Stripe payment feasibility test results, including the test setup, measurements, successful $25 sandbox payment, and GitHub evidence. Also updated my individual contribution record in Section 0.1.
+
 
 11/7/2026 2:40 PM - Rajit Ravindran
 
