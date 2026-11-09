@@ -135,3 +135,8 @@ Review the remaining P2 sections, confirm that all required diagrams and contrib
 
 11/8/2026 10:12 Abran Garcia
 - Section 7.1: ADR-01, ADR-02, and ADR-03
+
+11/8/2026 10:30 PM Logan Tavares
+- Section 6.1: Added architectural constraints paragraph
+- Section 6.2: Added the choice explanation paragraph
+- Section 7.2: Added trade-off summary section
