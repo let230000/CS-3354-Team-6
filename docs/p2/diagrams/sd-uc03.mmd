@@ -1,0 +1,32 @@
+---
+title: "Analysis sequence diagram · UC-03 Reserve and Pay for a Listing"
+---
+sequenceDiagram
+  actor Buyer
+  box rgb(244,246,249) BookBridge
+    participant Desk as ReservationDesk
+    participant Listing
+    participant Reservation
+    participant Payment
+    participant Notice
+    participant Seller as Seller : Student
+  end
+  participant PP as Payment Processor (external)
+
+  Buyer->>+Desk: 1 asks to reserve the listing
+  Desk->>+Listing: 2a asks whether the listing is Available and not held
+  Listing-->>-Desk: Available, not held
+  Desk->>+Reservation: 2b creates a 10-minute hold for the Buyer
+  Reservation-->>-Desk: hold end time
+  Desk->>Buyer: 2c shows the price and the time left on the hold
+  Buyer->>Desk: 3 agrees to pay
+  Desk->>+PP: 4 asks for payment of the amount due
+  Note over Buyer,PP: (5) the Buyer gives payment details to the Payment Processor, outside BookBridge
+  PP->>-Desk: 6a reports that the payment succeeded
+  Desk->>Payment: 6b records the payment (amount, result, time)
+  Desk->>Reservation: 6c marks the reservation Paid
+  Desk->>Listing: 6d changes the listing status to Reserved
+  Desk->>Notice: 6e leaves a reservation notice for the Seller
+  Desk->>+Seller: 6f asks for the Seller's name and UTD email
+  Seller-->>-Desk: name, UTD email
+  Desk->>-Buyer: 6g shows the reservation confirmation

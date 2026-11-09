@@ -1,0 +1,26 @@
+---
+title: "Analysis sequence diagram · UC-04 Confirm Handoff"
+---
+sequenceDiagram
+  actor Seller
+  box rgb(244,246,249) BookBridge
+    participant Desk as HandoffDesk
+    participant Listing
+    participant Reservation
+    participant HC as HandoffConfirmation
+  end
+
+  activate Desk
+  Desk->>+Listing: 0a asks for the Seller's listings and their status
+  Listing-->>-Desk: listings with status
+  Desk->>+Reservation: 0b asks for the Buyer, date reserved and confirmations of each Reserved listing
+  Reservation-->>-Desk: Buyer's name, date reserved, Buyer confirmed or not
+  Desk->>Seller: 0c shows the listings with their Buyer details
+  Seller->>Desk: 1 reports that the book for one Reserved listing was handed over
+  Desk->>Seller: 2 asks the Seller to confirm the handoff
+  Seller->>Desk: 3 confirms the handoff
+  Desk->>+Reservation: 4a asks the reservation to record the Seller's confirmation
+  Reservation->>HC: 4b records the confirmation with its time
+  Reservation-->>-Desk: recorded, Buyer has not confirmed yet
+  Desk->>Seller: 4c shows that the confirmation is recorded
+  deactivate Desk

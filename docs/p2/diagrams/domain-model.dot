@@ -1,0 +1,53 @@
+// Figure 5.1 BookBridge domain model (analysis level: conceptual classes, attributes, associations with multiplicities)
+// Source for /docs/p2/diagrams. Render: dot -Tpng -Gdpi=200 domain-model.dot -o domain-model.png
+digraph DomainModel {
+  graph [rankdir=LR, nodesep=0.55, ranksep=1.25, fontname="Calibri", fontsize=13, pad=0.3,
+         label="Figure 5.1  BookBridge domain model (analysis)", labelloc=b];
+  node  [shape=plain, fontname="Calibri", fontsize=12];
+  edge  [fontname="Calibri", fontsize=11, arrowhead=none, color="#444444", labeldistance=1.8, labelangle=30];
+
+  Student [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="5" bgcolor="#F4F6F9">
+    <tr><td bgcolor="#D9E2EC"><b>Student</b></td></tr><hr/>
+    <tr><td align="left">name<br align="left"/>UTD email<br align="left"/></td></tr></table>>];
+
+  Listing [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="5" bgcolor="#F4F6F9">
+    <tr><td bgcolor="#D9E2EC"><b>Listing</b></td></tr><hr/>
+    <tr><td align="left">condition<br align="left"/>price<br align="left"/>status<br align="left"/></td></tr></table>>];
+
+  Textbook [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="5" bgcolor="#F4F6F9">
+    <tr><td bgcolor="#D9E2EC"><b>Textbook</b></td></tr><hr/>
+    <tr><td align="left">title<br align="left"/>edition<br align="left"/>ISBN<br align="left"/></td></tr></table>>];
+
+  Course [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="5" bgcolor="#F4F6F9">
+    <tr><td bgcolor="#D9E2EC"><b>Course</b></td></tr><hr/>
+    <tr><td align="left">course number<br align="left"/></td></tr></table>>];
+
+  Reservation [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="5" bgcolor="#F4F6F9">
+    <tr><td bgcolor="#D9E2EC"><b>Reservation</b></td></tr><hr/>
+    <tr><td align="left">reserved at<br align="left"/>hold ends at<br align="left"/>state<br align="left"/></td></tr></table>>];
+
+  Payment [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="5" bgcolor="#F4F6F9">
+    <tr><td bgcolor="#D9E2EC"><b>Payment</b></td></tr><hr/>
+    <tr><td align="left">amount<br align="left"/>result<br align="left"/>time<br align="left"/></td></tr></table>>];
+
+  HandoffConfirmation [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="5" bgcolor="#F4F6F9">
+    <tr><td bgcolor="#D9E2EC"><b>HandoffConfirmation</b></td></tr><hr/>
+    <tr><td align="left">party<br align="left"/>confirmed at<br align="left"/></td></tr></table>>];
+
+  Notice [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="5" bgcolor="#F4F6F9">
+    <tr><td bgcolor="#D9E2EC"><b>Notice</b></td></tr><hr/>
+    <tr><td align="left">sent at<br align="left"/>seen<br align="left"/></td></tr></table>>];
+
+  { rank=same; Listing; Notice; Reservation; }
+  { rank=same; Textbook; Course; Payment; HandoffConfirmation; }
+
+  Student -> Listing      [label="sells (as Seller)", taillabel="1", headlabel="0..*"];
+  Student -> Reservation  [label="makes (as Buyer)",  taillabel="1", headlabel="0..*"];
+  Student -> Notice       [label="receives",          taillabel="1", headlabel="0..*"];
+  Listing -> Textbook     [label="is a copy of",      taillabel="0..*", headlabel="1"];
+  Listing -> Course       [label="is listed for",     taillabel="0..*", headlabel="1"];
+  Listing -> Reservation  [label="is reserved through", taillabel="1", headlabel="0..*", constraint=false];
+  Notice -> Reservation   [label="is about",          taillabel="0..*", headlabel="1", constraint=false];
+  Reservation -> Payment  [label="is paid by",        taillabel="1", headlabel="0..*"];
+  Reservation -> HandoffConfirmation [label="records", taillabel="1", headlabel="0..2", dir=back, arrowtail=diamond];
+}

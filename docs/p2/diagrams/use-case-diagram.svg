@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="660" viewBox="0 0 980 660" font-family="Calibri, Carlito, Arial, sans-serif">
+<rect width="980" height="660" fill="white"/>
+<defs><marker id="open" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10" fill="none" stroke="#333333" stroke-width="1.3"/></marker></defs>
+<rect x="230" y="40" width="530" height="570" fill="#F4F6F9" stroke="#333333" stroke-width="1.4"/>
+<text x="495" y="64" text-anchor="middle" font-size="17" font-weight="bold" fill="#333333">BookBridge</text>
+<line x1="119" y1="170" x2="284.1" y2="102.7" stroke="#333333" stroke-width="1.3"/>
+<line x1="119" y1="170" x2="280.0" y2="170.0" stroke="#333333" stroke-width="1.3"/>
+<line x1="119" y1="170" x2="284.1" y2="237.3" stroke="#333333" stroke-width="1.3"/>
+<line x1="119" y1="450" x2="288.3" y2="350.9" stroke="#333333" stroke-width="1.3"/>
+<line x1="119" y1="450" x2="275.5" y2="427.8" stroke="#333333" stroke-width="1.3"/>
+<line x1="119" y1="450" x2="288.3" y2="549.1" stroke="#333333" stroke-width="1.3"/>
+<line x1="851" y1="500" x2="725.0" y2="504.3" stroke="#333333" stroke-width="1.3"/>
+<line x1="518.6" y1="435.1" x2="559.4" y2="495.5" stroke="#333333" stroke-width="1.3" stroke-dasharray="6,4" marker-end="url(#open)"/>
+<text x="547" y="457" font-size="14" fill="#333333">«include»</text>
+<ellipse cx="400" cy="95" rx="120" ry="30" fill="white" stroke="#333333" stroke-width="1.4"/>
+<text x="400" y="92" text-anchor="middle" font-size="13" font-weight="bold" fill="#333333">UC-01</text>
+<text x="400" y="109" text-anchor="middle" font-size="14" fill="#333333">Post a Listing</text>
+<ellipse cx="400" cy="170" rx="120" ry="30" fill="white" stroke="#333333" stroke-width="1.4"/>
+<text x="400" y="167" text-anchor="middle" font-size="13" font-weight="bold" fill="#333333">UC-05</text>
+<text x="400" y="184" text-anchor="middle" font-size="14" fill="#333333">Edit or Remove a Listing</text>
+<ellipse cx="400" cy="245" rx="120" ry="30" fill="white" stroke="#333333" stroke-width="1.4"/>
+<text x="400" y="242" text-anchor="middle" font-size="13" font-weight="bold" fill="#333333">UC-04</text>
+<text x="400" y="259" text-anchor="middle" font-size="14" fill="#333333">Confirm Handoff</text>
+<ellipse cx="400" cy="340" rx="120" ry="30" fill="white" stroke="#333333" stroke-width="1.4"/>
+<text x="400" y="337" text-anchor="middle" font-size="13" font-weight="bold" fill="#333333">UC-02</text>
+<text x="400" y="354" text-anchor="middle" font-size="14" fill="#333333">Search for Textbooks</text>
+<ellipse cx="400" cy="425" rx="125" ry="32" fill="white" stroke="#333333" stroke-width="1.4"/>
+<text x="400" y="422" text-anchor="middle" font-size="13" font-weight="bold" fill="#333333">UC-03</text>
+<text x="400" y="439" text-anchor="middle" font-size="14" fill="#333333">Reserve and Pay for a Listing</text>
+<ellipse cx="640" cy="505" rx="85" ry="30" fill="white" stroke="#333333" stroke-width="1.4"/>
+<text x="640" y="502" text-anchor="middle" font-size="13" font-weight="bold" fill="#333333">UC-06</text>
+<text x="640" y="519" text-anchor="middle" font-size="14" fill="#333333">Take Payment</text>
+<ellipse cx="400" cy="560" rx="120" ry="30" fill="white" stroke="#333333" stroke-width="1.4"/>
+<text x="400" y="557" text-anchor="middle" font-size="13" font-weight="bold" fill="#333333">UC-07</text>
+<text x="400" y="574" text-anchor="middle" font-size="14" fill="#333333">Confirm Receipt</text>
+<circle cx="95" cy="140" r="11" fill="white" stroke="#333333" stroke-width="1.5"/>
+<line x1="95" y1="151" x2="95" y2="185" stroke="#333333" stroke-width="1.5"/>
+<line x1="75" y1="164" x2="115" y2="164" stroke="#333333" stroke-width="1.5"/>
+<line x1="95" y1="185" x2="79" y2="210" stroke="#333333" stroke-width="1.5"/>
+<line x1="95" y1="185" x2="111" y2="210" stroke="#333333" stroke-width="1.5"/>
+<text x="95" y="230" text-anchor="middle" font-size="15" fill="#333333">Seller</text>
+<circle cx="95" cy="420" r="11" fill="white" stroke="#333333" stroke-width="1.5"/>
+<line x1="95" y1="431" x2="95" y2="465" stroke="#333333" stroke-width="1.5"/>
+<line x1="75" y1="444" x2="115" y2="444" stroke="#333333" stroke-width="1.5"/>
+<line x1="95" y1="465" x2="79" y2="490" stroke="#333333" stroke-width="1.5"/>
+<line x1="95" y1="465" x2="111" y2="490" stroke="#333333" stroke-width="1.5"/>
+<text x="95" y="510" text-anchor="middle" font-size="15" fill="#333333">Buyer</text>
+<circle cx="875" cy="470" r="11" fill="white" stroke="#333333" stroke-width="1.5"/>
+<line x1="875" y1="481" x2="875" y2="515" stroke="#333333" stroke-width="1.5"/>
+<line x1="855" y1="494" x2="895" y2="494" stroke="#333333" stroke-width="1.5"/>
+<line x1="875" y1="515" x2="859" y2="540" stroke="#333333" stroke-width="1.5"/>
+<line x1="875" y1="515" x2="891" y2="540" stroke="#333333" stroke-width="1.5"/>
+<text x="875" y="560" text-anchor="middle" font-size="15" fill="#333333">«system»</text>
+<text x="875" y="577" text-anchor="middle" font-size="15" fill="#333333">Payment Processor</text>
+<text x="490" y="640" text-anchor="middle" font-size="15" font-style="italic" fill="#333333">Figure 3.4  BookBridge use case diagram</text>
+</svg>
