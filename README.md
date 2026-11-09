@@ -29,13 +29,5 @@ The team discusses decisions together and uses a majority vote when agreement ca
 P1: Requirements and project planning.
 P2: Analysis, high-level design, and payment feasibility testing.
 P3: Planned implementation and testing.
-Professor Davis,
 
-I wanted to bring up a concern about our team's participation during P2. Throughout the project, Rajit Ravindran and Noah Patel were the most consistent in responding and communicating. Some of the other members had limited participation, and I did not see any contributions from Logan Tavares.
 
-As project manager, I tried to keep everyone updated and encourage communication so we could complete the assignment on time. I also completed the Stripe payment feasibility test and helped update the project documentation.
-
-I wanted to make sure individual contributions are considered fairly when grading P2.
-
-Thank you,
-Derrick Greene
