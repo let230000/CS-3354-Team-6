@@ -104,3 +104,31 @@ Finished Section 6.4
 
 11/8/2026 6:34 PM - Rajit Ravindran
 Finished Section 6.6
+## November 8, 2026 — Derrick Greene
+
+**Work Completed:**
+
+- Completed the Stripe sandbox payment feasibility test using a $25 textbook test transaction and documented the results.
+- Updated the BookBridge README with the project description, team roles, and repository information.
+- Updated the team plan with working agreements, milestones, responsibilities, and project risks.
+- Coordinated team communication through Microsoft Teams and followed up with members about their assigned work.
+- Updated the P2 document's project title and corrected the team size in Section 1.2.
+- Completed Section 0.2, documenting changes made since P1.
+- Updated Section 0.1 with my individual contributions and GitHub evidence.
+- Completed Section 10, including the P3 milestone plan, risks, repository information, and AI-use disclosure.
+- Completed Section 11, documenting open questions about UTD authentication and Stripe payment integration.
+- Removed the template instruction boxes as required by the P2 assignment.
+
+**GitHub Evidence:**
+
+- Stripe payment feasibility: `af97f4c`
+- README updates: `f08a490`, `30e99a0`
+- Team plan update: `d06bd84`
+
+**Issues Encountered:**
+
+Some team members did not respond consistently to messages, making it difficult to schedule meetings and coordinate the project.
+
+**Next Steps:**
+
+Review the remaining P2 sections, confirm that all required diagrams and contributions are included, and prepare the final PDF and Git tag for submission.
